@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ this.title }}</title>
+	<meta name="description" content="My Personal Website">
+	<meta name="author" content="8Eyelashes">
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	<!-- FAVICON -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<!-- STYLESHEETS -->
+  <link rel="stylesheet" href="{{ '/static/css/bootstrap.min.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/font-awesome.min.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/magnific-popup.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/owl.carousel.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/custom.css'|asseturl }}">
+
+</head>
+<body>
+
+
+	<!-- PRELOADER -->
+	<section id="custom-preloader">
+		<header id="custom-preloader-content">
+			<object type="image/svg+xml" data="{{ '/static/images/preloader.svg'|asseturl }}" id="preloader"></object>
+			<span>Loading...</span>
+		</header>
+	</section> <!-- end PRELOADER -->
+
+
+	<!-- BACKGROUND -->
+	<section id="background">
+	</section><!-- end BACKGROUND -->
+
+
+	<!-- RESPONSIVE MENU -->
+	<div id="responsive-menu">
+		<a href="#" id="responsive-menu-list">
+			<div class="responsive-menu-bar">
+				<span>Menu</span>
+				<i class="fa fa-list"></i>
+			</div>
+		</a>
+		<ul class="responsive-menu-disable">
+			<li>
+				<a href="#content-wrap" class="page-scroll-responsive">
+					<i class="fa fa-long-arrow-left"></i>
+					<h3>
+						back to home
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#about" class="page-scroll-responsive">
+					<i class="fa fa-user"></i>
+					<h3>
+						about
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#resume" class="page-scroll-responsive">
+					<i class="fa fa-globe"></i>
+					<h3>
+						resume
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#portfolio" class="page-scroll-responsive">
+					<i class="fa fa-book nav-left"></i>
+					<h3>
+						portfolio
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#blog" class="page-scroll-responsive">
+					<i class="fa fa-paperclip"></i>
+					<h3>
+						blog
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#contact" class="page-scroll-responsive">
+					<i class="fa fa-envelope"></i>
+					<h3>
+						contact
+					</h3>
+				</a>
+			</li>
+
+		</ul>
+	</div><!-- end RESPONSIVE MENU -->
+
+
+	<!-- MAIN CONTENT -->
+	<section id="content-wrap">
+		<div class="container-liquid">
+			
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main-content">
+					<div class="profile-avatar overlay">
+						<img src="{{ '/static/images/avatar.jpg'|asseturl }}" alt="My Photo">
+					</div>
+					<h2>
+						{{ this.name }}
+					</h2>
+					<p>
+						{{ this.introduction_text }}
+					</p>
+				</header>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigations">
+					<ul>
+
+						<li id="about-link">			
+							<a href="#about" class="page-scroll">
+								<h3>
+									about
+								</h3>
+								<i class="fa fa-user nav-left"></i>
+							</a>
+						</li>	
+
+						<li id="resume-link">
+							<a href="#resume" class="page-scroll page-right">
+								<h3>
+									resume
+								</h3>
+								<i class="fa fa-globe nav-right"></i>
+							</a>
+						</li>
+
+						<li id="portfolio-link">
+							<a href="#portfolio" class="page-scroll">
+								<h3>
+									portfolio
+								</h3>
+								<i class="fa fa-book nav-left"></i>
+							</a>
+						</li>
+					
+						<li id="blog-link">
+							<a href="#blog" class="page-scroll page-right">
+								<h3>
+									blog
+								</h3>
+								<i class="fa fa-paperclip nav-right"></i>
+							</a>
+						</li>
+										
+						<li id="contact-link" class="contact-link">
+							<a href="#contact" class="page-scroll">
+								<h3>
+									contact
+								</h3>
+								<i class="fa fa-envelope nav-left"></i>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+
+
+      <!-- SOCIAL LINKS END OF NAVIGATION -->
+{#			<div class="row">#}
+{#				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-icons">#}
+{#					<ul>#}
+{#						#}
+{#						<li>#}
+{#							<a href="#">#}
+{#								<i class="fa fa-facebook"></i>#}
+{#							</a>#}
+{#						</li>#}
+{##}
+{#						<li>#}
+{#							<a href="#">#}
+{#								<i class="fa fa-twitter"></i>#}
+{#							</a>#}
+{#						</li>#}
+{#						#}
+{#						<li>#}
+{#							<a href="#">#}
+{#								<i class="fa fa-google-plus"></i>#}
+{#							</a>#}
+{#						</li>#}
+{##}
+{#					</ul>#}
+{#				</div>#}
+{#			</div>#}
+
+		</div>
+	</section><!-- end MAIN CONTENT -->
+
+
+
+	<!-- ABOUT -->
+	<section id="about" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						about
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- DESCRIPTION -->
+			<div class="row">
+				<div class="col-lg-8 col-md-9 col-sm-9 col-xs-10 about-description">
+					<p>
+            {{ this.about_intro }}
+					</p>
+				</div>
+			</div><!-- end DESCRIPTION -->
+
+			<!-- ICONBOX -->
+			<div class="row">
+				<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 iconbox">
+					<ul>
+						<li>
+							<i class="fa fa-cut"></i>
+							<h3>
+                {{ this.about_heading_upper }}
+							</h3>
+							<p>
+								{{ this.about_content_upper }}
+							</p>
+						</li>
+						<li class="iconbox-right">
+							<i class="fa fa-paper-plane-o"></i>
+							<h3>
+								{{ this.about_heading_middle }}
+							</h3>
+							<p>
+								{{ this.about_content_middle }}
+							</p>
+						</li>
+						<li>
+							<i class="fa fa-wrench"></i>
+							<h3>
+								{{ this.about_heading_lower }}
+							</h3>
+							<p>
+								{{ this.about_content_lower }}
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div><!-- end ICONBOX -->
+
+			<!-- BUTTONS -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="about-buttons">
+
+						<div class="btn">
+							<a href="#">
+								<i class="fa fa-arrow-down"></i>
+								<span>
+								download resume
+								</span>
+							</a>
+						</div>
+
+						<div class="btn">
+							<a href="#contact" class="page-scroll contact-button">
+								<i class="fa fa-envelope"></i>
+								<span>
+								contact me
+								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div><!-- end BUTTONS -->
+
+		</div>
+	</section><!-- end ABOUT -->
+
+
+
+	<!-- RESUME -->
+	<section id="resume" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						resume
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- TIMELINE -->
+			<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-10 timeline">
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 timeline-left">
+						<i class="fa fa-graduation-cap"></i>
+						<h3>
+							education
+						</h3>
+						<ul>
+							<li style="margin-top: 90px;">
+								<span>
+									{{ this.education_upper_date }}
+								</span>
+								<h4>
+									{{ this.education_upper_heading }}
+								</h4>
+								<p>
+                  {{ this.education_upper_text }}
+								</p>
+							</li>
+							<li>
+								<span>
+									{{ this.education_lower_date }}
+								</span>
+								<h4>
+									art {{ this.education_lower_heading }}
+								</h4>
+								<p>
+                  {{ this.education_lower_text }}
+								</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 timeline-right">
+						<i class="fa fa-briefcase"></i>
+						<h3>
+							employment
+						</h3>
+						<ul>
+							<li>
+								<span>
+									{{ this.employment_upper_date }}
+								</span>
+								<h4>
+									{{ this.employment_upper_heading }}
+								</h4>
+								<p>
+									{{ this.employment_upper_text }}
+								</p>
+							</li>
+							<li>
+								<span>
+									{{ this.employment_lower_date }}
+								</span>
+								<h4>
+									{{ this.employment_lower_heading }}
+								</h4>
+								<p>
+									{{ this.employment_lower_text }}
+								</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div><!-- end TIMELINE -->
+
+			<!-- SKILLS -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 skills">
+
+						<div class="skills-title">
+							<h3>
+								skills
+							</h3>
+							<i class="fa fa-flash"></i>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+							<input type="text" value="84" class="dial">
+							<h5>
+								html5
+							</h5>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+							<input type="text" value="71" class="dial">
+							<h5>
+								css3
+							</h5>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+							<input type="text" value="35" class="dial">
+							<h5>
+								php
+							</h5>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+							<input type="text" value="62" class="dial">
+							<h5>
+								wordpress
+							</h5>
+						</div>
+
+					</div>
+				</div>
+			</div><!-- end SKILLS -->
+
+		</div>
+	</section><!-- end RESUME -->
+
+
+
+	<!-- PORTFOLIO -->
+	<section id="portfolio" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						portfolio
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- FILTERS -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="portfolio-fliter">
+						<ul>
+							<li class="current"><a href="#">all</a></li>
+							<li><a href="#">web</a></li>
+							<li><a href="#">logo</a></li>
+							<li><a href="#">photography</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- end FILTERS -->
+
+
+			<!-- GALLERY -->
+			<div class="row">
+				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 portfolio-items">
+
+					<ul>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio01.jpg'|asseturl }}" alt="Portfolio Image" class="web">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio02.jpg'|asseturl }}" alt="Portfolio Image" class="logo">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio03.jpg'|asseturl }}" alt="Portfolio Image" class="logo photography">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio04.jpg'|asseturl }}" alt="Portfolio Image" class="photography">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio05.jpg'|asseturl }}" alt="Portfolio Image" class="web photography">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio06.jpg'|asseturl }}" alt="Portfolio Image" class="logo web">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio07.jpg'|asseturl }}" alt="Portfolio Image" class="web">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio08.jpg'|asseturl }}" alt="Portfolio Image" class="photography">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio09.jpg'|asseturl }}" alt="Portfolio Image" class="logo">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+            <li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio09.jpg'|asseturl }}" alt="Portfolio Image" class="logo">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+            <li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio09.jpg'|asseturl }}" alt="Portfolio Image" class="logo">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+            <li>
+							<a class="popup-image" href="{{ '/static/images/portfolio-popup.jpg'|asseturl }}" title="My Portfolio">
+								<img src="{{ '/static/images/portfolio09.jpg'|asseturl }}" alt="Portfolio Image" class="logo">
+								<div class="portfolio-description">
+									<h3>
+										Portfolio Title
+									</h3>
+									<p>
+										Some Custom Description
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div><!-- end GALLERY -->
+
+			<!-- QUOTES -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-11 quotes">
+
+						<ul id="quote-slideshow">
+
+							<li>
+								<p>
+                  {{ this.quote_1 }}
+                </p>
+								<div class="quote-name">
+									<p>by</p>
+									<span>
+										{{ this.quote_1_author }}
+									</span>
+								</div>
+							</li>
+
+							<li>
+								<p>
+                  {{ this.quote_2 }}
+								</p>
+								<div class="quote-name">
+									<p>by</p>
+									<span>
+										{{ this.quote_2_author }}
+									</span>
+								</div>
+							</li>
+
+							<li>
+								<p>
+                  {{ this.quote_3 }}
+								</p>
+								<div class="quote-name">
+									<p>by</p>
+									<span>
+										{{ this.quote_3_author }}
+									</span>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div><!-- end QUOTES -->
+
+		</div>
+	</section><!-- end PORTFOLIO -->
+
+	
+
+	<!-- BLOG -->
+	<section id="blog" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						blog
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-9 col-md-10 col-sm-9 col-xs-10 blog">
+            <ul>
+
+              {% from "macros/blog.html" import render_blog_post %}
+              {% for child in this.pagination.items %}
+                {{ render_blog_post(child, from_index=true) }}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- end BLOG -->
+
+
+	
+	<!-- CONTACT -->
+	<section id="contact" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						contact
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- GOOGLE MAP -->
+{#			<div class="row">#}
+{#				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">#}
+{#					<div class="col-lg-9 col-md-10 col-sm-10 col-xs-11 googlemap">#}
+{#						<div id="map-canvas"></div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div><!-- end GOOGLE MAP -->#}
+
+			<!-- CONTACT INFO & FORM -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-10 col-sm-10 col-xs-11 contact-section">
+
+						<!-- CONTACT INFO -->
+						<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 contact-info">
+							<p>
+
+							</p>
+							<ul>
+
+{#								<li>#}
+{#									<i class="fa fa-home"></i>#}
+{#									<p>{{ this.contact_address }}</p>#}
+{#								</li>#}
+
+								<li>
+									<i class="fa fa-phone"></i>
+									<p>{{ this.contact_phone }}</p>
+								</li>
+
+{#								<li>#}
+{#									<i class="fa fa-twitter"></i>#}
+{#									<p>{{ this.contact_social }}</p>#}
+{#								</li>#}
+
+								<li>
+									<i class="fa fa-envelope"></i>
+									<p>{{ this.contact_email }}</p>
+								</li>
+							</ul>
+						</div><!-- end CONTACT INFO -->
+
+
+            <div class="col-lg-7 col-md-12 col-sm-7 col-xs-12 contact-form">
+
+
+              <form method="POST" id="contactform" action="//formspree.io/reijo.raidma@gmail.com">
+                <input type="text" name="name" id="name" placeholder="name">
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <input type="text" name="_subject" id="subject" placeholder="subject">
+                <textarea name="message" rows="12" id="message" placeholder="message"></textarea>
+                <input type="submit" name="submit" id="submit" value="submit">
+              </form>
+
+						</div>
+
+					</div>
+				</div>
+			</div><!-- end CONTACT INFO & FORM -->
+
+		</div>
+	</section><!-- end CONTACT -->
+	
+
+
+	<!-- SCRIPTS -->
+  <script src="{{ '/static/js/jquery.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.backstretch.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.nicescroll.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.knob.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.magnific-popup.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/owl.carousel.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.validate.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery.form.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/custom.js'|asseturl }}"></script>
+  <script src="http://maps.google.com/maps/api/js"></script>
+  <script src="{{ '/static/js/googlemaps.js'|asseturl }}"></script>
+
+	<script>
+
+		// PRELOADER SCRIPT
+		$(window).load(function() {
+			var prld = $('#custom-preloader-content').addClass("animated fadeOut");
+			setTimeout(function () {
+			    prld.css("display", "none").css("z-index", "-9999");
+			    $('#custom-preloader').css({
+			    	"display": "none",
+			    	"z-index": "-9999"
+			    });
+			    $('#content-wrap').css("z-index", "4");
+			    $('.main-content').css("z-index", "4");
+			}, 500);
+			$('body').delay(800).css({'overflow':'visible'});
+		});
+
+		
+		// BACKGROUND IMAGE/SLIDESHOW SCRIPT
+		$('#background').backstretch("{{ '/static/images/background.jpg'|asseturl }}");
+
+
+    //CONTACT FORM SCRIPT
+    var $contactForm = $('#contactform');
+    $contactForm.submit(function (e) {
+      e.preventDefault();
+      $.ajax({
+        url: '//formspree.io/reijo.raidma@gmail.com',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function () {
+          $contactForm.append('<div class="alert alert--loading info_message">Sending message…</div>');
+        },
+        success: function (data) {
+          $contactForm.find('.alert--loading').hide();
+          $contactForm.append('<div class="alert alert--success info_message">Message sent!</div>');
+          $contactForm.clearForm();
+        },
+        error: function (err) {
+          $contactForm.find('.alert--loading').hide();
+          $contactForm.append('<div class="alert alert--error info_message">Ops, there was an error.</div>');
+        }
+      });
+    });
+
+  </script>
+	<!-- end SCRIPTS -->
+
+
+</body>
+</html>

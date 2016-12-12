@@ -1,0 +1,46 @@
+{% macro render_blog_post_single(post, from_index=false) %}
+  <div class="ajax-popup blog-single">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blog-single-feature-image overlay">
+
+          {% for image in post.pictures %}
+            <img src="{{ image|url }}">
+          {% endfor %}
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 blog-single-content">
+
+            <div class="blog-single-title">
+              <div class="blog-single-title-seprator"></div>
+              <h2>
+                {{ post.title }}
+              </h2>
+            </div>
+          <div class="blog-single-description">
+
+            {{ post.body }}
+
+
+            <span>
+              <i class="fa fa-calendar"></i> {{ post.date }}  /
+              <i class="fa fa-user"></i> {{ post.written_by }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-close">
+      <a class="ajax-popup-dismiss" href="#">
+        <i class="fa fa-close"></i>
+      </a>
+    </div>
+
+  </div>
+{% endmacro %}

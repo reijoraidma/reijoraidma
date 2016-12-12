@@ -1,0 +1,47 @@
+{% macro render_blog_post(post, from_index=false) %}
+  <li>
+    <div class="blog-image">
+
+{#      <img src="{{ '/static/images/blog01.jpg'|asseturl }}" alt="Blog Image">#}
+
+{#      {% for image in post.introduction_pictures %}#}
+{#        <img src="{{ ('../esimene-katsetus/'+image)|url }}">#}
+{#      {% endfor %}#}
+{#        {% if post.introduction_picture %}#}
+{#          <img src="{{ ('../esimene-katsetus/'+post.introduction_picture)|url }}">#}
+{#          <img src="{{ (post+post.introduction_picture)|url }}">#}
+{#        {% endif %}#}
+{##}
+{#        {% if not post.introduction_picture %}#}
+{#           <img src="{{ '/static/images/blog01.jpg'|asseturl }}" alt="Blog Image">#}
+{#        {% endif %}#}
+
+{#        <img src="{{ post.introduction_picture|url }}">#}
+
+      {% if post.introduction_picture %}
+        <img src="{{ (post.path+'/'+post.introduction_picture)|url }}">
+      {% endif %}
+
+      {% if not post.introduction_picture %}
+        <img src="{{ '/static/images/blog01.jpg'|asseturl }}" alt="Blog Image">
+      {% endif %}
+
+    </div>
+    <a class="popup-ajax" href="{{ post|url }}">
+      <h2>
+        {{ post.title }}
+      </h2>
+    </a>
+    <p>
+      {{ post.introduction }}
+    </p>
+    <span>
+      <i class="fa fa-calendar"></i> {{ post.date }} &nbsp;&nbsp;/
+      <i class="fa fa-comments-o"></i> {{ post.written_by }} &nbsp;&nbsp;/&nbsp;&nbsp;
+      <a class="popup-ajax" href="{{ post|url }}">
+        read more
+      </a>
+      <i class="fa fa-angle-double-right"></i>
+    </span>
+  </li>
+{% endmacro %}

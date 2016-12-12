@@ -1,2 +1,5 @@
 [project]
 name = Reijo website
+
+[servers.production]
+target = ghpages://reijoraidma/reijoraidma/reijoraidma.github.io?cname=www.reijoraidma.ee

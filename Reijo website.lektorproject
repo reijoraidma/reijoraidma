@@ -2,4 +2,4 @@
 name = Reijo website
 
 [servers.ghpages]
-target = ghpages://reijoraidma/reijoraidma.github.io?cname=www.reijoraidma.ee
+target = ghpages+https://reijoraidma/reijoraidma.github.io?cname=www.reijoraidma.ee
